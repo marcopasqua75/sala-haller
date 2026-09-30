@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALA HALLER - Display</title>
+    
+    <!-- Importazione font Montserrat dal catalogo Google Fonts per lo stile S2E -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset totale per eliminare barre di scorrimento involontarie */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #0f1115; /* Sfondo scuro elegante in linea con i trend tech di S2E */
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Layout principale diviso a metà (Logo a sinistra, Testo a destra) */
+        .kiosk-container {
+            display: flex;
+            width: 90vw;
+            height: 80vh;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5vw;
+        }
+
+        /* Sezione Sinistra: Logo */
+        .logo-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-section img {
+            max-width: 100%;
+            max-height: 50vh;
+            object-fit: contain;
+        }
+
+        /* Sezione Destra: I tre testi ordinati */
+        .text-section {
+            flex: 1.2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        /* Stile specifico per le 3 righe richieste */
+        .line-1 {
+            font-size: 8vh;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffffff;
+            margin-bottom: 1vh;
+        }
+
+        .line-2 {
+            font-size: 5vh;
+            font-weight: 700;
+            color: #00bcd4; /* Tocco di azzurro/cyan in pieno stile S2E */
+            margin-bottom: 3vh;
+        }
+
+        .line-3 {
+            font-size: 4vh;
+            font-weight: 400;
+            color: #a0a5b0; /* Grigio chiaro pulito per dettagli tecnici */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kiosk-container">
+        <!-- Lato sinistro: Logo S2E istituzionale -->
+        <div class="logo-section">
+            <img src="https://solutions2enterprises.com/wp-content/uploads/2026/07/S2E-logo.png" alt="S2E Logo">
+        </div>
+
+        <!-- Lato destro: Le 3 righe informative -->
+        <div class="text-section">
+            <div class="line-1">Sala Haller</div>
+            <div class="line-2">Team IT</div>
+            <div class="line-3">Progetto [NAV2BC]</div>
+        </div>
+    </div>
+
+</body>
+</html>
